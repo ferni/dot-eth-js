@@ -75,7 +75,7 @@ var namehash = ENS.prototype.namehash;
  */
 
 function Registrar(web3){
-    this.web3 = web3;
+    this.web3 = this.fixSha3(web3);
 }
 
 var publicRegistryAddress = "0x112234455c3a32fd11230c42e7bccd4a84e02010";
